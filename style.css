@@ -1,0 +1,287 @@
+:root {
+  --bg-color: #2b2b2b;
+  --bg-fade: #bbb;
+  --fg-fade: #444;
+  --mainfont: 'Linux Libertine', serif;
+  --titlefont: torontoSubway, sans-serif;
+  --headerfont: var(--titlefont);
+}
+
+
+body
+{
+  background: #ddd;
+  /* main font */
+  font-family: var(--mainfont);
+  line-height: 1.25;
+}
+b
+{
+  font-weight: bold;
+}
+i
+{
+  font-style: italic;
+}
+#inner p
+{
+  text-align:justify;
+  text-align-last:center;
+  text-justify: inter-word;
+}
+
+div#title-box
+{
+  color: white;
+  background: var(--bg-color);
+  text-align: center;
+  width: 100%;
+  padding-bottom:20px;
+}
+h1#title
+{
+  font-size: 4.5em;
+  font-family: var(--titlefont);
+  font-variant: small-caps;
+  font-weight: bold;
+  margin-bottom: 10pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h2
+{
+  font-size: 2.5em;
+  font-family: var(--headerfont);
+  font-variant: small-caps;
+  font-weight: bold;
+  margin-bottom: 5pt;
+  margin-top: 40pt;
+  text-align: center;
+}
+h2:first-child
+{
+  margin-top: 20pt;
+}
+h3
+{
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-top: 1pt;
+  padding-bottom: 1pt;
+}
+ul#speakerlist li h3
+{
+  padding-left: 80pt;
+}
+h4
+{
+  font-size: 1.3em;
+  padding: 1pt;
+}
+.tbd
+{
+  font-style: italic;
+  font-weight: normal;
+  content: "to be determined.";
+}
+h3.headlinertitle:before
+{
+  content: "“";
+}
+h3.headlinertitle:after
+{
+  content: "”";
+}
+h3.headlinertitle.tbd:before{
+  content: "Title coming soon."
+}
+h3.headlinertitle.tbd:after{
+  content: ""
+}
+h3.date
+{
+  background: var(--bg-color);
+  color:white;
+  border-radius: 10pt 5pt 5pt 5pt;
+  margin-top: 10px;
+}
+li.tbd h3.date
+{
+  border-radius: 5pt 5pt 5pt 5pt;
+  font-weight: normal;
+  background: var(--bg-fade);
+  color: var(--fg-fade);
+}
+li.tbd h3.date:after
+{
+  content: " – Speaker yet to be determined.";
+}
+
+
+div#outer
+{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 90%;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-radius: 0 0 5px 5px;
+  background: white;
+}
+div#inner
+{
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+ul#speakerlist
+{
+  padding: 10pt;
+}
+
+h3.headlinername:before
+{
+  content: "Headliner: ";
+  font-weight: normal;
+}
+img.headliner
+{
+  float: left;
+  border-radius: 10pt;
+  width: 100px;
+  border: 2px solid var(--bg-color);
+  margin-right: 10pt;
+}
+
+/* opener */
+div.openerbox
+{
+  text-align: right;
+  font-size: 1.05em;
+  min-height: 70px;
+  padding-right: 80px;
+}
+span.opener
+{
+}
+span.opener:before
+{
+  content: "Opener: ";
+  font-weight: normal;
+  text-align: right;
+}
+img.opener
+{
+  border-radius: 6pt;
+  vertical-align:middle;
+  border: 2px solid var(--bg-color);
+  float: right;
+  margin-right: -80px;
+  width: 60px;
+}
+
+ul#speakerlist li
+{
+  min-height: 200px;
+}
+ul#speakerlist li.tbd
+{
+  min-height: inherit;
+}
+
+/* links */
+a
+{
+  color: inherit;
+}
+a:hover
+{
+  text-decoration: underline;
+  background-color: #333;
+  color: white;
+
+}
+
+/* encourage line break */
+.line {
+  white-space:nowrap;
+}
+
+/* links in header */
+.hlink
+{
+  font-variant: normal;
+  font-size: 0.5em;
+  font-weight: normal;
+  font-family: var(--mainfont);
+}
+p#tagline
+{
+  font-size: 1.3em;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* fonts */
+@font-face {
+  font-family: torontoSubway;
+  src: url(fonts/toronto-subway-w01-regular.ttf);
+}
+@font-face {
+    font-family: 'Linux Libertine'; /* normal */
+    src: url('./fonts/linux-libertine/LinLibertine_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Linux Libertine'; /* italic */
+    src: url('./fonts/linux-libertine/LinLibertine_RI.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Linux Libertine'; /* bold */
+    src: url('./fonts/linux-libertine/LinLibertine_RB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Linux Libertine'; /* bold */
+    src: url('./fonts/linux-libertine/LinLibertine_RBI.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum'; /* normal */
+    src: url('./fonts/linux-biolinum/LinBiolinum_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum'; /* italic */
+    src: url('./fonts/linux-biolinum/LinBiolinum_RI.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum'; /* bold */
+    src: url('./fonts/linux-biolinum/LinBiolinum_RB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum'; /* bold */
+    src: url('./fonts/linux-biolinum/LinBiolinum_RBI.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
