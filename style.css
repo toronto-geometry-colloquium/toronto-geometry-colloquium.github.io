@@ -145,7 +145,13 @@ li.tbd h3.date:after
 {
   content: " – Speaker yet to be determined.";
 }
-
+li.tbd h3.cancel
+{
+  border-radius: 5pt 5pt 5pt 5pt;
+  font-weight: normal;
+  background: var(--bg-fade);
+  color: var(--fg-fade);
+}
 
 div#outer
 {
