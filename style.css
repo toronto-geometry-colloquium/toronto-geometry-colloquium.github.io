@@ -277,7 +277,7 @@ iframe#cal
   overflow:hidden;
   z-index:0;
 }
-img
+img#cal
 {
   position: fixed;
   right: 0;
