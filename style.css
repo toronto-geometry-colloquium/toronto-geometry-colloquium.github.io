@@ -281,7 +281,7 @@ img#addarrow
 {
   position: fixed;
   right: 0;
-  bottom: 28;
+  bottom: 28px;
   width: 341px;
   z-index:0;
 }
