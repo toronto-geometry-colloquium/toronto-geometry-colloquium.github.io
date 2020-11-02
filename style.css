@@ -346,3 +346,36 @@ img#addarrow
     font-weight: bold;
     font-style: italic;
 }
+
+div.past-talks-container
+{
+  text-align: center;
+}
+figure.past-talk
+{
+  display: inline-block;
+  text-align: center;
+  max-width: 264px;
+  border-radius: 10pt;
+  border: 2px solid var(--bg-color);
+  padding: 4px;
+  margin-bottom: 5px;
+  font-size: calc(12px + 1.1vw);
+}
+
+img.poster
+{
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 1000px)
+{
+figure.past-talk
+{
+  max-width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+}
