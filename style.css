@@ -360,7 +360,18 @@ figure.past-talk
   border: 2px solid var(--bg-color);
   padding: 4px;
   margin-bottom: 5px;
-  font-size: calc(12px + 1.1vw);
+}
+figcaption.speaker{
+  text-align:left;
+  margin-left:11px;
+  font-size:10px;
+  font-weight:bold;
+}
+figcaption.talk{
+  text-align:left;
+  height: 20px;
+  margin-left: 11px;
+  font-size:8px;
 }
 
 img.poster
