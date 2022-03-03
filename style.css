@@ -390,3 +390,11 @@ figure.past-talk
   display: block;
 }
 }
+
+.current-poster
+{
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
